@@ -114,9 +114,10 @@ h2 {
     margin: 100px;
     text-align: left;
     text-shadow: 5px 5px rgb(216, 216, 216);
+}
+
+.grid-container h2 {
     background: linear-gradient(to right, rgb(135, 143, 146), white)
-
-
 }
 
 .banner {
@@ -188,7 +189,6 @@ h2 {
 }
 
 .about iframe {
-    border-radius: 50%;
     width: 11em;
     height: 11em;
     border: 5px solid black;
