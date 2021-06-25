@@ -47,8 +47,8 @@ body {
     background-size: cover;
     padding: 2px;
     color: white;
-    width: 120px;
-    height: 120px;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
     box-shadow: 5px 5px 5px rgb(4, 98, 141);
     transition: 1000ms;
@@ -56,8 +56,8 @@ body {
 }
 
 .logo-name:hover {
-    width: 150px;
-    height: 150px;
+    width: 15rem;
+    height: 15rem;
     transform: rotate(360deg);
 }
 
