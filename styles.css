@@ -20,13 +20,13 @@ body {
     background: white;
     display: grid;
     grid-template-rows: minmax(10px, auto);
+    background: linear-gradient(to bottom, rgb(49, 197, 241), rgb(184, 164, 167));
     
 }
 
 /* navbar styles*/
 .navbar {
     background-color: whitesmoke;
-    grid-row: 1 / 2;
     margin: 0;
     padding: 0;
     position: fixed;
@@ -35,7 +35,6 @@ body {
     width: 99.5vw;
     font-size: 0.6em;
     color: black;
-    display: block;
 }
 
 
@@ -48,53 +47,35 @@ body {
     background-size: cover;
     padding: 2px;
     color: white;
-    border: 1px solid black;
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    box-shadow: 2px 2px grey;
+    box-shadow: 5px 5px 5px rgb(4, 98, 141);
     transition: 1000ms;
     
 }
 
 .logo-name:hover {
-
-    border: 1px solid white;
     width: 150px;
     height: 150px;
     transform: rotate(360deg);
 }
 
 
-
-nav {
-    position: absolute;
-    
-    word-spacing: 5px;
-    letter-spacing: 2px;
-    margin: 10px auto;
-    top: 15px;
-    left: calc(90vw - 250px);
-    
-}
-
 nav a {
-    
+    float: right;
+    justify-content: center;
+    color: black; 
+    padding: 0.3rem;
+    margin: 0.5rem;
     text-decoration: none;
-    padding: 2px;
-    font-size: 1em;
-    color: black;
-    letter-spacing: 3px;
-    transition: 1000ms;
-
 }
 
 nav a:hover {
-    background: lightgreen;
+    
     color: white;
     background-color: black;
-    border-radius: 20%;
-    padding: 10px;
+    border-radius: 50%;
     text-shadow: none;
 }
 
@@ -114,6 +95,7 @@ h2 {
     margin: 100px;
     text-align: left;
     text-shadow: 5px 5px rgb(216, 216, 216);
+    
 }
 
 .grid-container h2 {
@@ -123,34 +105,44 @@ h2 {
 .banner {
     
     text-shadow: 5px 5px rgb(216, 216, 216);
-    padding: 35vh;
+    margin: 35vh;
     text-align: center;
-    
+    border-radius: 50%;
+    background: rgb(168, 157, 137);
+    box-shadow: 10px 5px 2px whitesmoke;
+    animation: bg-animation 30000ms linear infinite alternate;
 }
+
 
 .biography {
     grid-row: 3;
     margin: 10vh;
     text-align: left;
-    
-}
+}    
 
 .biography2 {
     display: flex;
     padding: 1rem;
 }
 
+.biography h2 {
+    background: transparent;
+    box-shadow: 2px 2px 2px whitesmoke;
+    
+}
+
+
 .biography p {
     text-align: left;
     padding: 1rem;
-    background: whitesmoke;
+    background: transparent;
+    box-shadow: 2px 2px 2px whitesmoke;
 }
 
 .biography img {
     border-radius: 50%;
     width: 11em;
     height: 11em;
-   
     margin: 1em;
 }
 
@@ -163,12 +155,21 @@ h2 {
 
 .contact {
     grid-row: 4;
-    margin: 10vh;   
+    margin: 10vh; 
+    
+}
+
+.contact h2 {
+    background: transparent;
+    box-shadow: 2px 2px 2px whitesmoke;
 }
 
 .contact h3 {
     margin: 3em;
-    background: whitesmoke;
+    background: transparent;
+    box-shadow: 2px 2px 2px whitesmoke;
+    padding: 1rem; 
+    
 }
 
 .about {
@@ -177,10 +178,16 @@ h2 {
     text-align: left;
 }
 
+.about h2 {
+    background: transparent;
+    box-shadow: 2px 2px 2px whitesmoke;
+    
+}
 
 .about p {
     padding: 1rem;
-    background: whitesmoke;
+    background: transparent;
+    box-shadow: 2px 2px 2px whitesmoke;
 }
 
 .about2 {
@@ -203,8 +210,14 @@ h2 {
     text-align: left;
 }
 
+.who-am-i h2 {
+    background: transparent;
+    box-shadow: 2px 2px 2px whitesmoke;
+}
+
 .who-am-i  p {
-    background: whitesmoke;
+    background: transparent;
+    box-shadow: 2px 2px 2px whitesmoke;
     padding: 1rem;
 }
 
@@ -224,9 +237,9 @@ h2 {
 }    
 /*portfolio styles*/
 .portfoliowrapper {
-    border: 10px solid brown;
+    
     grid-template-rows: minmax(300px, auto);
-    background: whitesmoke;
+    
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -235,7 +248,12 @@ h2 {
     text-shadow: 5px 5px rgb(216, 216, 216);
     padding: 20vh;
     text-align: center;
-    border-bottom: 1px solid grey;
+    box-shadow: 0px 10px 10px rgb(49, 197, 241);
+    background: linear-gradient(to bottom, rgb(214, 178, 61), white, rgb(49, 197, 241));
+}
+
+.title h1 {
+    transform: translateY(-50px);
     
 }
 
@@ -245,7 +263,6 @@ h2 {
    text-shadow: -5px 0 white, 0 5px white, 5px 0 white, 0 -5px white;
    padding-top: 100px;
    padding-bottom: 100px;
-   border: 10px solid rgb(11, 58, 2);
 }
 
 .pacmen a {
@@ -272,7 +289,7 @@ h2 {
     text-shadow: -5px 0 white, 0 5px white, 5px 0 white, 0 -5px white;
     padding-top: 100px;
     padding-bottom: 100px;
-    border: 10px solid rgb(27, 2, 87);
+    
 }
 
 .eyes a {
@@ -298,7 +315,7 @@ h2 {
     text-shadow: -5px 0 white, 0 5px white, 5px 0 white, 0 -5px white;
     padding-top: 100px;
     padding-bottom: 100px;
-    border: 10px solid rgb(42, 85, 165);
+    
 }
 
 .bus-tracker a {
@@ -317,3 +334,22 @@ h2 {
     
 }
  
+button {
+    background: red;
+    font-size: 1rem;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+
+@keyframes bg-animation {
+    0%  { transform: translateX(0);
+    }
+    50% { 
+        transform: translateX(80%);
+    }   
+    100%{ 
+        transform: translateX(-80%);
+    }
+}
